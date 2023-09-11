@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2? family= Bruno+Ace & família= Gwendolyn:wght@400;700 & display=swap');
+
+:root
+{
+    --cor-primaria : rgb(212, 8, 212);
+    --cor-secundaria : #f0f8ff;
+    --fonte-principal :'Gwendolyn' , cursive ;
+}
+
+*
+{
+    margin:0;
+    padding:0;
+}
+body
+{
+    /* height: 100vh; 
+     isso servia para que desse para ver a pagina inteira ja que n dava pra ver por conta da falta de item , mas agora temos o suficiente e ja n precisamais disso*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria) ;
+}
+.cabecalho
+{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho_nav
+{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho_nav_a
+{
+    font-family: var(--fonte-principal);
+    color: #23da60;
+    text-decoration: none;
+}
+.cabecalho_nav_a:hover
+{
+    color: turquoise;
+}
+.classe-yumi
+{
+        color: aquamarine;
+}
+.cor-da-yumi
+{
+        color: bisque;
+}
+.aupresentacao-yumi
+{
+
+    padding: 5% 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.aupresentacao-yumi__counteudo
+{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+}
+.aupresentacao-yumi__conteudo__title
+{
+    font-size: 2.25rem;
+    font-family: 'Bruno Ace', cursiva;
+    
+}
+.aupresentacao-yumi__conteudo__text
+{
+    font-size: 1.5rem;
+    font-family:  var(--fonte-principal); 
+}
+.aupresentacao-yumi__conteudo__button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.aupresentacao-yumi__conteudo__button__subtext
+{
+    font-family:  var(--fonte-principal);
+    color:#23da60;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.aupresentacao-yumi__conteudo__button__link
+{
+    /* background-color:black; */
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 7px solid #000;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 16px 0;
+    color: #23da60;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    text-decoration: none;
+}
+.aupresentacao-yumi__conteudo__button__link:hover
+{
+    background-color: yellow;
+    
+}
+.aupresentacao-yumi__img
+{
+    width: 50%;
+}
+.footer-yumi-baby
+{
+    color : aliceblue;
+    background-color:var(--cor-primaria);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.875rem;
+    border-radius: 12px; /* quanto mais px(pixel)mais redondo a borda fica*/
+    border: 7px double #000;/*quanto mais px aqui , maior fica a borda ,  o "double é o tipo da borda"*/
+}
+@media(max-width : 1200px)
+{
+    .cabecalho
+    {
+        padding: 12%;
+    }
+    .cabecalho_nav
+    {
+        justify-content: center;
+    }
+    .aupresentacao-yumi
+    {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .aupresentacao-yumi__counteudo
+    {
+        width : auto;
+    }
+}
